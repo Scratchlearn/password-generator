@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    
+}
+
+h1{
+    font-size: 1rem;
+    margin-block: 8px;
+}
+.inputBox{
+  position: relative;
+}
+
+.inputBox span{
+  position: absolute;
+  top: 49px;
+  left: 185px;
+  color: #ecdddd;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.passBox{
+    background-color: #24232B;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 300px;
+    font-size: 20px;
+    margin-block: 8px;
+    text-overflow: ellipsis;
+}
+.container2{
+    border: 0.5px solid #fff;
+    max-width: 300px;
+    min-height: 400px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    background-color: #24232B;
+}
+   
+.row{
+    display: flex;
+    margin-block: 8px;
+}
+
+.row p, .row label{
+    flex-basis: 100%;
+    font-size: 18px;
+}
+
+.row input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.password-box {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    border: 1px solid gray;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .strength-indicator {
+    flex: 1;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .strength-text {
+    font-weight: bold;
+  }
+  
+ 
+
+  .criteria-boxes {
+    display: flex;
+  }
+  
+  .criteria-box {
+    width: 7px;
+    height: 18px;
+    background-color: lightgray;
+    margin-left: 5px;
+  }
+
+
+
+  .genBtn{
+    border: none;
+    outline: none;
+    background-color: #A4FFAF;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 18px;
+    margin-block: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 250px;
+   
+}
+
+.genBtn:hover{
+    background-color: #0066ff;
+}
+
+
+#password-strength-meter .filled {
+  background-color: rgb(11, 92, 11);
+}
+
+#copyIcon{
+  color: #A6FEB0;
+}
+  

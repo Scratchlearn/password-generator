@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | JS Project</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="inputBox">
+    <h1 id="#first">Password Generator</h1>
+    <span class="material-icons" id="copyIcon">content_copy</span>
+  </div>
+    <div class="container">
+        <input type="text" class="passBox" id="passBox" placeholder="P4$5W0rD" disabled />
+      </div>
+      </div>
+    <div class="container2">
+        <div class="row">
+            <p>Character Length</p>
+            <span id="sliderValue"></span>
+        </div>
+        <input type="range" min="4" max="30" value="8" id="inputSlider" />
+        <div class="row">
+
+            <input type="checkbox" name="uppercase" id="uppercase" checked />
+            <label for="uppercase">Include uppercase Letters</label>
+        </div>
+        <div class="row">
+            <input type="checkbox" name="lowercase" id="lowercase" checked />
+            <label for="lowercase">Include Lowercase Letter</label>
+        </div>
+        
+    <div class="row">
+        <input type="checkbox" name="numbers" id="numbers" checked />
+        <label for="numbers">Include Numbers</label>   
+    </div>
+    <div class="row">
+        <input type="checkbox" name="symbols" id="symbols" checked/>
+        <label for="symbols">Include Symbols</label>
+        
+        
+      </div>
+      <div class="password-box">
+        <div class="strength-indicator">
+          <div class="strength-text">Strength</div>
+          <div class="strength-bar">
+            <div class="strength-level"></div>
+          </div>
+        </div>
+        <div class="criteria-boxes" id="password-strength-meter">
+          <div class="criteria-box upper"></div>
+          <div class="criteria-box lower"></div>
+          <div class="criteria-box num"></div>
+          <div class="criteria-box spe"></div>
+        </div>
+
+        
+      </div>
+      <button type="button" class="genBtn" id="genBtn">
+        Generate Password
+      </button>
+
+    </div>
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
